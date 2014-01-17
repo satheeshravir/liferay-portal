@@ -67,7 +67,7 @@ public class DefaultConfigurationAction
 
 		return getParameter(
 			portletRequest,
-			name.concat(StringPool.UNDERLINE).concat(languageId));
+			name.concat(StringPool.UNDERSCORE).concat(languageId));
 	}
 
 	public String getParameter(PortletRequest portletRequest, String name) {

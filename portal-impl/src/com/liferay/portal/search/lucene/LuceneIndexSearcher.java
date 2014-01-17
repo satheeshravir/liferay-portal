@@ -576,7 +576,7 @@ public class LuceneIndexSearcher extends BaseIndexSearcher {
 		}
 
 		hitDoc.addText(
-			Field.SNIPPET.concat(StringPool.UNDERLINE).concat(snippetField),
+			Field.SNIPPET.concat(StringPool.UNDERSCORE).concat(snippetField),
 			snippet);
 
 		return snippet;

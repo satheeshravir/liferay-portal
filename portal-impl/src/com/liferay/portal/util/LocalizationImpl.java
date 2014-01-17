@@ -328,7 +328,7 @@ public class LocalizationImpl implements Localization {
 			String languageId = LocaleUtil.toLanguageId(locale);
 
 			String localeParameter = parameter.concat(
-				StringPool.UNDERLINE).concat(languageId);
+				StringPool.UNDERSCORE).concat(languageId);
 
 			map.put(locale, ParamUtil.getString(request, localeParameter));
 		}
@@ -348,7 +348,7 @@ public class LocalizationImpl implements Localization {
 			String languageId = LocaleUtil.toLanguageId(locale);
 
 			String localeParameter = parameter.concat(
-				StringPool.UNDERLINE).concat(languageId);
+				StringPool.UNDERSCORE).concat(languageId);
 
 			map.put(
 				locale,
@@ -370,7 +370,7 @@ public class LocalizationImpl implements Localization {
 			String languageId = LocaleUtil.toLanguageId(locale);
 
 			String localeParameter = parameter.concat(
-				StringPool.UNDERLINE).concat(languageId);
+				StringPool.UNDERSCORE).concat(languageId);
 
 			map.put(
 				locale, ParamUtil.getString(portletRequest, localeParameter));
@@ -474,7 +474,7 @@ public class LocalizationImpl implements Localization {
 			String languageId = LocaleUtil.toLanguageId(locale);
 
 			String localParameter =
-				parameter + StringPool.UNDERLINE + languageId;
+				parameter + StringPool.UNDERSCORE + languageId;
 
 			String value = PrefsParamUtil.getString(
 				preferences, portletRequest, localParameter);
@@ -509,7 +509,7 @@ public class LocalizationImpl implements Localization {
 			LocaleUtil.getDefault());
 
 		if (!languageId.equals(defaultLanguageId)) {
-			key += StringPool.UNDERLINE + languageId;
+			key += StringPool.UNDERSCORE + languageId;
 		}
 
 		return key;

@@ -141,14 +141,14 @@ public class StagingImplTest {
 			PortletDataHandlerKeys.PORTLET_CONFIGURATION_ALL,
 			new String[] {Boolean.FALSE.toString()});
 		parameters.put(
-			PortletDataHandlerKeys.PORTLET_DATA + StringPool.UNDERLINE +
+			PortletDataHandlerKeys.PORTLET_DATA + StringPool.UNDERSCORE +
 				PortletKeys.JOURNAL,
 			new String[] {String.valueOf(stageJournal)});
 		parameters.put(
 			PortletDataHandlerKeys.PORTLET_DATA_ALL,
 			new String[] {Boolean.FALSE.toString()});
 		parameters.put(
-			PortletDataHandlerKeys.PORTLET_SETUP + StringPool.UNDERLINE +
+			PortletDataHandlerKeys.PORTLET_SETUP + StringPool.UNDERSCORE +
 				PortletKeys.JOURNAL,
 			new String[] {String.valueOf(stageJournal)});
 

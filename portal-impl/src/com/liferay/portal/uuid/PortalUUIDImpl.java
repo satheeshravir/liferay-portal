@@ -30,7 +30,7 @@ public class PortalUUIDImpl implements PortalUUID {
 	@Override
 	public String fromJsSafeUuid(String jsSafeUuid) {
 		return StringUtil.replace(
-			jsSafeUuid, StringPool.DOUBLE_UNDERLINE, StringPool.DASH);
+			jsSafeUuid, StringPool.DOUBLE_UNDERSCORE, StringPool.DASH);
 	}
 
 	@Override
@@ -46,7 +46,7 @@ public class PortalUUIDImpl implements PortalUUID {
 	@Override
 	public String toJsSafeUuid(String uuid) {
 		return StringUtil.replace(
-			uuid, StringPool.DASH, StringPool.DOUBLE_UNDERLINE);
+			uuid, StringPool.DASH, StringPool.DOUBLE_UNDERSCORE);
 	}
 
 }

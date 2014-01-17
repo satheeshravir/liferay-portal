@@ -540,7 +540,7 @@ public class XMLSourceProcessor extends BaseSourceProcessor {
 		sb.append("liferay-friendly-url-routes_");
 		sb.append(
 			StringUtil.replace(
-				mainReleaseVersion, StringPool.PERIOD, StringPool.UNDERLINE));
+				mainReleaseVersion, StringPool.PERIOD, StringPool.UNDERSCORE));
 		sb.append(".dtd\">\n\n<routes>\n");
 
 		for (ComparableRoute comparableRoute : comparableRoutes) {
@@ -808,7 +808,7 @@ public class XMLSourceProcessor extends BaseSourceProcessor {
 		Set<String> urlPatterns = new TreeSet<String>();
 
 		for (String locale : locales) {
-			int pos = locale.indexOf(StringPool.UNDERLINE);
+			int pos = locale.indexOf(StringPool.UNDERSCORE);
 
 			String languageCode = locale.substring(0, pos);
 

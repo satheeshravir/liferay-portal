@@ -842,7 +842,7 @@ public abstract class BaseIndexer implements Indexer {
 			}
 
 			document.addText(
-				field.concat(StringPool.UNDERLINE).concat(locale.toString()),
+				field.concat(StringPool.UNDERSCORE).concat(locale.toString()),
 				titlesArray);
 		}
 	}
@@ -1268,7 +1268,7 @@ public abstract class BaseIndexer implements Indexer {
 
 		Locale snippetLocale = getSnippetLocale(document, locale);
 
-		String prefix = Field.SNIPPET + StringPool.UNDERLINE;
+		String prefix = Field.SNIPPET + StringPool.UNDERSCORE;
 
 		String title = document.get(
 			snippetLocale, prefix + titleField, titleField);
@@ -1286,7 +1286,7 @@ public abstract class BaseIndexer implements Indexer {
 	protected Summary createSummary(
 		Document document, String titleField, String contentField) {
 
-		String prefix = Field.SNIPPET + StringPool.UNDERLINE;
+		String prefix = Field.SNIPPET + StringPool.UNDERSCORE;
 
 		String title = document.get(prefix + titleField, titleField);
 		String content = document.get(prefix + contentField, contentField);
@@ -1608,7 +1608,7 @@ public abstract class BaseIndexer implements Indexer {
 	}
 
 	protected Locale getSnippetLocale(Document document, Locale locale) {
-		String prefix = Field.SNIPPET + StringPool.UNDERLINE;
+		String prefix = Field.SNIPPET + StringPool.UNDERSCORE;
 
 		String localizedContentName =
 			prefix + DocumentImpl.getLocalizedName(locale, Field.CONTENT);

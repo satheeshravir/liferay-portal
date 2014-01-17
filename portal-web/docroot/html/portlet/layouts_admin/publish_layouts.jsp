@@ -310,10 +310,10 @@ else {
 						</c:if>
 
 						<%
-						List<Portlet> dataSiteLevelPortlets = LayoutExporter.getDataSiteLevelPortlets(company.getCompanyId());
+							List<Portlet> dataSiteLevelPortlets = LayoutExporter.getDataSiteLevelPortlets(company.getCompanyId());
 						%>
 
-						<c:if test="<%= !dataSiteLevelPortlets.isEmpty() %>">
+						<c:if test="<%=!dataSiteLevelPortlets.isEmpty()%>">
 							<aui:fieldset cssClass="options-group" label="content">
 								<%@ include file="/html/portlet/layouts_admin/publish_layouts_portlets_data.jspf" %>
 							</aui:fieldset>

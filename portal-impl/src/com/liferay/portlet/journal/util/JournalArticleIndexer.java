@@ -137,7 +137,7 @@ public class JournalArticleIndexer extends BaseIndexer {
 
 			String fieldName = StringUtil.replaceLast(
 				ddmStructureFieldNameParts[2],
-				StringPool.UNDERLINE.concat(
+				StringPool.UNDERSCORE.concat(
 					LocaleUtil.toLanguageId(searchContext.getLocale())),
 				StringPool.BLANK);
 
@@ -318,13 +318,13 @@ public class JournalArticleIndexer extends BaseIndexer {
 			}
 
 			document.addText(
-				Field.CONTENT.concat(StringPool.UNDERLINE).concat(languageId),
+				Field.CONTENT.concat(StringPool.UNDERSCORE).concat(languageId),
 				content);
 			document.addText(
-				Field.DESCRIPTION.concat(StringPool.UNDERLINE).concat(
+				Field.DESCRIPTION.concat(StringPool.UNDERSCORE).concat(
 					languageId), description);
 			document.addText(
-				Field.TITLE.concat(StringPool.UNDERLINE).concat(languageId),
+				Field.TITLE.concat(StringPool.UNDERSCORE).concat(languageId),
 				title);
 		}
 
@@ -396,7 +396,7 @@ public class JournalArticleIndexer extends BaseIndexer {
 				document.get("defaultLanguageId"));
 		}
 
-		String prefix = Field.SNIPPET + StringPool.UNDERLINE;
+		String prefix = Field.SNIPPET + StringPool.UNDERSCORE;
 
 		String title = document.get(
 			snippetLocale, prefix + Field.TITLE, Field.TITLE);
@@ -566,7 +566,7 @@ public class JournalArticleIndexer extends BaseIndexer {
 	protected String getBasicContentSummary(
 		Document document, Locale snippetLocale) {
 
-		String prefix = Field.SNIPPET + StringPool.UNDERLINE;
+		String prefix = Field.SNIPPET + StringPool.UNDERSCORE;
 
 		String content = document.get(
 			snippetLocale, prefix + Field.DESCRIPTION, prefix + Field.CONTENT);

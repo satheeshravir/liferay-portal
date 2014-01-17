@@ -267,7 +267,7 @@ public class HtmlImpl implements Html {
 			}
 
 			if (hasToken) {
-				sb.append(StringPool.UNDERLINE);
+				sb.append(StringPool.UNDERSCORE);
 			}
 			else {
 				sb.append(c);

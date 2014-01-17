@@ -55,7 +55,7 @@ public class AlloyPermission {
 		String controller, String actionId) {
 
 		actionId =
-			StringUtil.toUpperCase(actionId) + StringPool.UNDERLINE +
+			StringUtil.toUpperCase(actionId) + StringPool.UNDERSCORE +
 				StringUtil.toUpperCase(controller);
 
 		try {

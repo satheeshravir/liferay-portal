@@ -463,11 +463,11 @@ public class ActionUtil {
 
 				StringBundler sb = new StringBundler(6);
 
-				sb.append(StringPool.UNDERLINE);
+				sb.append(StringPool.UNDERSCORE);
 				sb.append(field.getName());
-				sb.append(StringPool.UNDERLINE);
+				sb.append(StringPool.UNDERSCORE);
 				sb.append(i);
-				sb.append(StringPool.UNDERLINE);
+				sb.append(StringPool.UNDERSCORE);
 				sb.append(LanguageUtil.getLanguageId(locale));
 
 				if (inherited) {
@@ -476,10 +476,10 @@ public class ActionUtil {
 
 					if (article != null) {
 						String elName =
-							field.getName() + StringPool.UNDERLINE + i;
+							field.getName() + StringPool.UNDERSCORE + i;
 
 						String elLanguageId =
-							StringPool.UNDERLINE +
+							StringPool.UNDERSCORE +
 							LocaleUtil.toLanguageId(defaultLocale);
 
 						long articleImageId = article.getArticleImageId(
